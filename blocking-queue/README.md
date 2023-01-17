@@ -18,8 +18,16 @@ mvn clean compile exec:java -Dexec.mainClass=com.lld.app2.ProducerConsumerWithMu
 ```   
 <br>
 
-3. [com.lld.app3.ProducerConsumerWithSemaphore](./src/main/java/com/lld/app3/ProducerConsumerWithSemaphore.java) <br>
-   This is the third implementation where we make use of Manually constructed [CountingSemaphore](./src/main/java/com/lld/app3/util/CountingSemaphore.java) to keep track of permits. <br> 
+3. [com.lld.app3.ProducerConsumerWithConditionVariable.java](./src/main/java/com/lld/app3/ProducerConsumerWithConditionVariable.java) <br>
+   This is the third implementation where we make use of ReentrantLock as well as Condition variable to perform inter thread communication. <br>
+   [BlockingQueueWithConditionVariable](./src/main/java/com/lld/app3/util/BlockingQueueWithConditionVariable.java) <br>
+   Run using below command:
+```shell
+mvn clean compile exec:java -Dexec.mainClass=com.lld.app3.ProducerConsumerWithConditionVariable
+```
+
+4. [com.lld.app3.ProducerConsumerWithSemaphore](./src/main/java/com/lld/app4/ProducerConsumerWithSemaphore.java) <br>
+   This is the third implementation where we make use of Manually constructed [CountingSemaphore](./src/main/java/com/lld/app4/util/CountingSemaphore.java) to keep track of permits. <br> 
    Run using below command:
 ```shell
 mvn clean compile exec:java -Dexec.mainClass=com.lld.app3.ProducerConsumerWithSemaphore

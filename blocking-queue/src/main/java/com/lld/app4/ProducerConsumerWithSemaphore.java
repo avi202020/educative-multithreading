@@ -1,6 +1,6 @@
-package com.lld.app3;
+package com.lld.app4;
 
-import com.lld.app3.util.BlockingQueue;
+import com.lld.app4.util.BlockingQueue;
 
 public class ProducerConsumerWithSemaphore {
     public static void main(String[] args) {
